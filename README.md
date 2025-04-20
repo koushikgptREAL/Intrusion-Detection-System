@@ -5,7 +5,7 @@ The Intrusion Detection System (IDS) monitors system logs and network activity u
 
 ## Features
 - **Real-time Log Monitoring**: Continuously scans system logs and network activity.
-- **Hash-Based Integrity Verification**: Uses SHA-256 to detect tampering.
+- **Hash-Based Integrity Verification**: Uses SHA-512 to detect tampering.
 - **Automated Alerts**: Notifies administrators of unauthorized changes.
 - **Lightweight & Efficient**: Minimal resource usage while ensuring security.
 - **Customizable Logging**: Configurable monitoring for different system components.
@@ -33,7 +33,7 @@ Ensure you have the following installed:
 
 ## How It Works
 1. Collects system logs & network activity.
-2. Computes SHA-256 hash values for logs.
+2. Computes SHA-512 hash values for logs.
 3. Compares new hash values with stored hashes:
    - ✅ If match → Logs remain unchanged; continue monitoring.
    - ❌ If mismatch → Possible tampering; trigger alert & log event.
